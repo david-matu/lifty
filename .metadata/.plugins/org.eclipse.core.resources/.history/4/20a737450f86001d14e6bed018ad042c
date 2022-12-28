@@ -1,0 +1,20 @@
+package com.dave.hobby.lift;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.dave.hobby.lift.model.Lift;
+
+public class LiftController {
+	
+	private static final List<Lift> lifts = new ArrayList<>();
+	
+	public static void main(String[] args) {
+		
+		System.out.println("*******************************************");
+		System.out.println("*  Welcome to Dave's Lift Control Center  *");
+		System.out.println("*******************************************");
+		
+		
+	}
+}

@@ -1,0 +1,26 @@
+package com.dave.hobby.lift.model;
+
+/**
+ * 
+ * @author David
+ * Dec 27, 2022
+ * 
+ * Enlist all floors so that they are referenced from a single source
+ * 
+ */
+public enum Floor {
+	BP ("Basement Parking"),
+	0("Ground Floor (Floor Zero)"),
+	
+	;
+	
+	private final String floor;
+	
+	Floor(String floor) {
+		this.floor = floor;
+	}
+
+	public String getStatus() {
+		return floor;
+	}
+}

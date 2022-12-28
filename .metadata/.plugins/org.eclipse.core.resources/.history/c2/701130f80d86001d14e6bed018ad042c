@@ -1,0 +1,10 @@
+package com.dave.hobby.lift;
+
+public class LiftController {
+	
+	public static void main(String[] args) {
+		System.out.println("Welcome to Dave's Lift Control Center");
+		
+		
+	}
+}

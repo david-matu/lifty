@@ -1,0 +1,11 @@
+package com.dave.hobby.lift.model;
+
+public enum TripStatus {
+	WAITING ("Waiting for Lift"),;
+
+	TripStatus(String string) {
+		this.valueOf(string);
+	}
+	
+	
+}

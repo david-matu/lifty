@@ -1,0 +1,29 @@
+package com.dave.hobby.lift;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.dave.hobby.lift.model.Lift;
+
+public class LiftController {
+	
+	private static final List<Lift> lifts = new ArrayList<>();
+	
+	private static Lift liftA = new Lift("A", "Operating first left)");
+	private static Lift liftB = new Lift("B", "Operating second left)");
+	private static Lift liftC = new Lift("A", "Operating second right)");
+	private static Lift liftD = new Lift("A", "Operating first right)");
+	
+	public static void main(String[] args) {
+		lifts.add(liftA);
+		lifts.add(liftB);
+		lifts.add(liftC);
+		lifts.add(liftD);
+		
+		System.out.println("*******************************************");
+		System.out.println("*  Welcome to Dave's Lift Control Center  *");
+		System.out.println("*******************************************");
+		
+		
+	}
+}

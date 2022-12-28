@@ -1,0 +1,9 @@
+package com.dave.hobby.lift.model;
+
+public enum Status {
+	IN_MOTION,
+	STOPPED,
+	FAILED;
+	
+	Status() {}
+}

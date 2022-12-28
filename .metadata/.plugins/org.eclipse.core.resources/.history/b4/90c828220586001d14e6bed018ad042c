@@ -1,0 +1,15 @@
+package com.dave.hobby.lift.model;
+
+public enum TripStatus {
+	private final String status;
+	
+	WAITING ("Waiting for Liftt"),
+	BOARDED ("");
+
+	
+	private TripStatus(String status) {
+		this.status = status; 
+	}
+	
+	
+}
