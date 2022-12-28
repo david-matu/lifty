@@ -1,6 +1,0 @@
-package com.dave.hobby.lift.model;
-
-public enum DoorStatus {
-	OPEN,
-	CLOSED
-}
