@@ -22,6 +22,7 @@ public class Lift {
 	public Lift(String label, String description) {
 		this.label = label;
 		this.description = description;
+		this.setCurrentFloor(Floor.BP);
 	}
 
 	public Floor getCurrentFloor() {
@@ -68,23 +69,25 @@ public class Lift {
 	 * Important Methods
 	 * 
 	 */
-	public void pickUser(String currentFloor) {
-		//Implement
-		
+	public void pickUser(Floor userFloor) {
+			travelToFloor(userFloor);
+			openDoor();
+			
 	}
 	
 	public void dropUser() {
-		//Implement
+		System.out.println("Opening Door");
 		
 	}
 	
 	public void openDoor() {
-		//Implement
+		System.out.println(label + ": Opening Door for ");
+		
 		
 	}
 	
 	public void closeDoor() {
-		//Implement
+		System.out.println(label + ": Closing Door");
 	}
 	
 	public void resetToFloor() {
@@ -92,9 +95,31 @@ public class Lift {
 	}
 	
 	public void travelToFloor(Floor floor) {
+		System.out.println("[" + label + "]: I am travelling from " + this.getCurrentFloor() + " to " + floor);
+		//Get the index whether positive or negative
+		Floor[] indexes = Floor.values();
 		
+		int currentIndex = 0;
+		
+		int fNo = 0;
+		for(Floor f : indexes) {
+			//System.out.print(f + " ");
+			if(f.equals(floor)) {
+				currentIndex = fNo;
+			}
+			fNo++;
+		}
+		
+		System.out.println("Current index: " + currentIndex);
+		currentFloor = floor;
+		//System.out.println(label + " currently on floor index " + Floor.valueOf(Floor(floor)));
 	}
 	
+	private String Floor(Floor floor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	@Override
 	public String toString() {
 		return "Lift [label=" + label + ", description=" + description + ", currentFloor=" + currentFloor

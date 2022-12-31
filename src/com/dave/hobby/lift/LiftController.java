@@ -35,6 +35,7 @@ public class LiftController {
 		System.out.println("*******************************************");
 		
 		runLiftChecks();
+		
 	}
 	
 	public static void runLiftChecks() {
@@ -44,6 +45,7 @@ public class LiftController {
 				System.out.println("Lift " + f.getLabel() + " is ****OKAY****");
 			}
 		}
+		System.out.println();
 	}
 	
 }

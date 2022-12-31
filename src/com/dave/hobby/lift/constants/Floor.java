@@ -28,7 +28,7 @@ public enum Floor {
 		this.floor = floor;
 	}
 
-	public String getStatus() {
+	public String getFloorDescription() {
 		return floor;
 	}
 }
